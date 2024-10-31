@@ -1,0 +1,69 @@
+--- 
+import Layout from '../layouts/Layout.astro'; 
+---
+
+<Layout title="Nos Caméras | Luxe Camera">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="favicon.ico">
+        <meta name="description" content="Découvrez notre collection de caméras.">
+    </head>
+    
+    <div class="container">
+        <section id="cams" class="main-content">
+            <h1 class="section_title">Nos Caméras</h1>
+            <br><br>
+            <div class="images">
+                <ul id="camera-list">
+                    <li class="cam">
+                        <div><img src="Assets/cam1.jpg" alt="Camera Model 1"></div>
+                        <span>SONY XXX</span>
+                        <span class="prix">3.000$</span><br>
+                        <a href="#">ACHETER</a>
+                    </li>
+                    <li class="cam">
+                        <div><img src="Assets/cam2.jpg" alt="Camera Model 2"></div>
+                        <span>SONY XXX</span>
+                        <span class="prix">1.000$</span><br>
+                        <a href="#">ACHETER</a>
+                    </li>
+                    <li class="cam">
+                        <div><img src="Assets/cam3.jpg" alt="Camera Model 3"></div>
+                        <span>SONY XXX</span>
+                        <span class="prix">1.500$</span><br>
+                        <a href="#">ACHETER</a>
+                    </li>
+                    <li class="cam">
+                        <div><img src="Assets/cam4.jpg" alt="Camera Model 4"></div>
+                        <span>SONY XXX</span>
+                        <span class="prix">2.000$</span><br>
+                        <a href="#">ACHETER</a>
+                    </li>
+                    <li class="cam">
+                        <div><img src="Assets/cam5.jpg" alt="Camera Model 5"></div>
+                        <span>SONY XXX</span>
+                        <span class="prix">3.500$</span><br>
+                        <a href="#">ACHETER</a>
+                    </li>
+                    <li class="cam">
+                        <div><img src="Assets/cam6.jpg" alt="Camera Model 6"></div>
+                        <span>SONY XXX</span>
+                        <span class="prix">4.000$</span><br>
+                        <a href="#">ACHETER</a>
+                    </li>
+                </ul>
+            </div>
+            <br><br><br>
+            <!-- Pagination -->
+            <div id="pagination">
+                <button id="prev-page" onclick="changePage(-1)">Précédent</button>
+                <span id="page-number">Page 1</span>
+                <button id="next-page" onclick="changePage(1)">Suivant</button>
+            </div>
+            <br><br><br>
+        </section>
+    </div>
+    
+
+</Layout>
