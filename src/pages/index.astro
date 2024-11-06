@@ -1,0 +1,92 @@
+--- 
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home | Luxe Camera">
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <section id="home">
+          <div class="left">
+              <h1>Buy <span>Your Camera</span> <hr> Cheaper From Us</h1>
+              <i><p>Capturez chaque instant avec nos caméras de haute qualité</p></i>
+              <blockquote>
+                  <footer>Luxe <cite>CAMERA</cite></footer>
+              </blockquote><br><br><br>
+              <a href="#">BUY NOW</a>
+          </div>
+          <div class="right">
+              <img src="Assets/img1.png" alt="Image of Camera">
+          </div>
+      </section>
+
+      <section id="values">
+          <div class="values-text">
+              <h2>Nos Valeurs</h2>
+              <p><strong>Authenticité</strong> : Nous sélectionnons rigoureusement chaque caméra pour sa qualité...</p>
+              <p><strong>Innovation et Haute Technologie</strong> : Nos caméras intègrent les dernières avancées...</p>
+          </div>
+          <div class="values-image">
+              <img src="Assets/cam7.jpeg" alt="High-Tech Camera">
+          </div>
+      </section>
+
+      <div class="video-section">
+          <h2 class="section_title">PRESENTATION CAMERA</h2>
+          <video controls width="600">
+              <source src="Assets/video1.mp4" type="video/mp4">
+          </video>
+      </div>
+
+      <section id="about-values">
+          <div class="values-text">
+              <h2>À PROPOS</h2>
+              <p>Les caméras modernes incluent des fonctionnalités avancées telles que la stabilisation d'image...</p>
+          </div>
+          <div class="values-image">
+              <img src="Assets/cam8.jpg" alt="Image of Camera">
+          </div>
+      </section>
+
+      <div class="container">
+          <section id="cams" class="main-content">
+              <h2 class="section_title">
+                  <a href="produit">CATALOGUE CAMERAS</a>
+              </h2>
+              <div class="images">
+                  <ul>
+                      <li class="cam">
+                          <div>
+                              <img src="Assets/cam1.jpg" alt="Sony XXX Camera">
+                          </div>
+                          <span>SONY XXX</span>
+                          <span class="prix">3,000$</span>
+                          <a href="#">ACHETER</a>
+                      </li>
+                      <li class="cam">
+                          <div>
+                              <img src="Assets/cam2.jpg" alt="Sony XXX Camera">
+                          </div>
+                          <span>SONY XXX</span>
+                          <span class="prix">1,000$</span>
+                          <a href="#">ACHETER</a>
+                      </li>
+                      <li class="cam">
+                          <div>
+                              <img src="Assets/cam3.jpg" alt="Sony XXX Camera">
+                          </div>
+                          <span>SONY XXX</span>
+                          <span class="prix">1,500$</span>
+                          <a href="#">ACHETER</a>
+                      </li>
+                  </ul>
+              </div>
+          </section>
+      </div>
+    </body>
+</Layout>
+

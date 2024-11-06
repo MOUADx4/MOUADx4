@@ -1,0 +1,17 @@
+---
+import "../styles/style.scss";
+const { cameras } = Astro.props;
+---
+
+<div class="images">
+    <ul id="camera-list">
+        {cameras.map(camera => (
+            <li class="cam" key={camera.id}>
+                <div><img src={camera.imageUrl} alt={camera.name} /></div>
+                <span>{camera.name}</span>
+                <span class="prix">{camera.price}</span><br />
+                <a href={camera.link}>ACHETER</a>
+            </li>
+        ))}
+    </ul>
+</div>

@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Cameras from '../components/cameras.astro';
+
+const cameras = [
+    { id: 1, name: "SONY XXX", imageUrl: "/Assets/cam1.jpg", price: "3.000$", link: "#" },
+    { id: 2, name: "SONY XXX", imageUrl: "/Assets/cam2.jpg", price: "1.000$", link: "#" },
+    { id: 3, name: "SONY XXX", imageUrl: "/Assets/cam3.jpg", price: "1.500$", link: "#" },
+    { id: 4, name: "SONY XXX", imageUrl: "/Assets/cam4.jpg", price: "2.000$", link: "#" },
+    { id: 5, name: "SONY XXX", imageUrl: "/Assets/cam5.jpg", price: "3.500$", link: "#" },
+    { id: 6, name: "SONY XXX", imageUrl: "/Assets/cam6.jpg", price: "4.000$", link: "#" }
+];
+---
+
+<Layout title="Nos Caméras | Luxe Camera">
+    <div class="container">
+        <section id="cams" class="main-content">
+            <h1 class="section_title">Nos Caméras</h1>
+            <br><br>
+            <Cameras cameras={cameras} />
+            <br><br><br>
+            <div id="pagination">
+                <button id="prev-page" onclick="changePage(-1)">Précédent</button>
+                <span id="page-number">Page 1</span>
+                <button id="next-page" onclick="changePage(1)">Suivant</button>
+            </div>
+            <br><br><br>
+        </section>
+    </div>
+</Layout>
